@@ -1,0 +1,170 @@
+/* Global Reset */
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #888;
+    overflow-x: hidden;
+    font-size: 15px;
+  }
+  
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: #007bff; /* Latar belakang biru */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header img {
+    height: 100px; /* Ukuran logo */
+  }
+  
+  /* Detail Page Card */
+  .detail-card {
+    background-color: #f5f5f5; /* Warna abu-abu terang */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow lembut */
+    padding: 20px;
+    margin-top: 50px; /* Jarak dari header */
+  }
+  
+  .detail-card .card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center; /* Tengah hanya untuk judul */
+  }
+  
+  .divider {
+    border: none;
+    border-top: 2px solid #ddd; /* Garis abu-abu */
+    margin: 20px 0;
+  }
+  /* Main Form Styling */
+form {
+    margin-top: 30px;
+    background-color: #ffffff; /* Background putih */
+    border-radius: 10px; /* Membuat form melengkung */
+    padding: 20px; /* Padding di dalam form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow lembut */
+}
+
+form .form-label {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+form .form-control-sm {
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button,
+form .btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Button Alignment */
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Title Adjustment */
+h1.text-center {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 30px;
+}
+.card.border-danger {
+    border: 2px solid #dc3545; /* Merah untuk tugas yang mendekati deadline */
+}
+
+.card.border-primary {
+    border: 2px solid #007bff; /* Biru untuk tugas biasa */
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+.card {
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card.border-danger {
+    border: 2px solid #dc3545; /* Garis merah untuk tugas mendesak */
+}
+
+.card.border-primary {
+    border: 2px solid #007bff; /* Garis biru untuk tugas biasa */
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.badge {
+    font-size: 0.85rem;
+    padding: 4px 8px;
+    border-radius: 10px;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+.bg-success {
+    background-color: #28a745; /* Hijau untuk Completed */
+    color: white;
+}
+
+.bg-danger {
+    background-color: #dc3545; /* Merah untuk Pending */
+    color: white;
+}
+
+.card .update-status {
+    float: right;
+    font-size: 0.85rem;
+    padding: 5px 10px;
+}
