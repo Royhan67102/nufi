@@ -5,19 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Tugas</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/tambahan.css" />
+    <link rel="stylesheet" href="assets/css/profil.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/detail.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container text-center">
-            <a href="tampilan.html">
-                <img src="assets/images/logo/logo.png" alt="Logo">
-            </a>
+   <!-- Preloader -->
+   <div class="preloader">
+    <div class="preloader-inner">
+        <div class="preloader-icon">
+            <span></span>
+            <span></span>
         </div>
-    </header>
+    </div>
+</div>
+<!-- /End Preloader -->
+
+<!-- Start Header Area -->
+<header class="header navbar-area" >
+    <div class="container">
+ 
+                    <nav class="navbar navbar-expand-lg" >
+                        <div class="button add-list-button" style="margin-top: 20px; margin-left: -60px;">
+                            <a href="tampilan.html" class="btn">Kembali</a>
+                        </div>
+                    </nav>
+                 
+
+    </div> <!-- container -->
+</header>
+<!-- End Header Area -->
 
     <!-- Main Content -->
     <main class="container mt-5">
@@ -79,6 +109,25 @@
             // Reset form
             form.reset();
         });
+    </script>
+    <!-- ========================= JS here ========================= -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/count-up.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+
+        //====== counter up 
+        var cu = new counterUp({
+            start: 0,
+            duration: 2000,
+            intvalues: true,
+            interval: 100,
+            append: " ",
+        });
+        cu.start();
     </script>
 </body>
 

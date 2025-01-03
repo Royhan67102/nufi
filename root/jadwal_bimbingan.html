@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Daftar Tugas</title>
+    <title>Jadwal Bimbingan</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
@@ -17,80 +17,88 @@
     <link rel="stylesheet" href="assets/css/glightbox.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/tambahan.css" />
-
     <style>
-        
 
-        .header {
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header .title {
             font-size: 24px;
             font-weight: bold;
-            text-align: center;
-            margin-bottom: 20px;
         }
 
-        .section {
-            margin-bottom: 20px;
-        }
-
-        .section h3 {
-            background: #0078FF;
-            color: white;
-            padding: 10px;
-            border-radius: 10px;
+        .header .date {
             font-size: 18px;
+            color: #000000;
         }
 
-        .task {
-            background: #E9F3FF;
-            padding: 10px;
+
+        .schedule {
+            margin-bottom: 20px;
+        }
+
+        .schedule-item {
+            background: #ffffff;
+            padding: 15px;
             border-radius: 10px;
-            margin: 10px 0;
+            margin-bottom: 10px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .task-details {
+        .schedule-details {
             display: flex;
             flex-direction: column;
         }
 
-        .task-details span {
+        .schedule-details span {
             font-size: 16px;
             color: #333;
         }
 
-        .task-actions {
+
+        .schedule-actions {
             display: flex;
             gap: 10px;
+            align-items: center;
         }
 
-        .task-actions i {
+        .schedule-actions i {
             font-size: 18px;
-            color: #0078FF;
+            color: #61a0db;
             cursor: pointer;
         }
 
-        .add-task {
+        .schedule-status {
+            font-size: 14px;
+            color: red;
+        }
+
+        .add-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: #61a0db;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
             display: flex;
             justify-content: center;
-            margin-top: 20px;
-        }
-
-        .add-task button {
-            background: #0078FF;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 10px;
+            align-items: center;
+            font-size: 30px;
             cursor: pointer;
-            font-size: 16px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
-        .add-task button:hover {
-            background: #005bb5;
+        .add-button:hover {
+            background: #61a0db;
         }
-
     </style>
 
 </head>
@@ -135,7 +143,7 @@
                                         <a href="tugas.html">Tugas</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="jadwal_bimbingan.html" 
+                                        <a href="#" 
                                             aria-label="Toggle navigation">Jadwal Bimbingan</a>
                                     </li>
                                     <li class="nav-item">
@@ -172,135 +180,55 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Ada Tugas Apa Aja Nih?
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Ada Jadwal Bimbingan Hari Ini?
                     </div>
                 </div>
             </div>
             <div class="container">
-        
-                <div class="section">
-                    <h3>In Progress</h3>
-                    <div class="task">
-                        <div class="task-details">
-                            <span>1. Menulis Bab 1</span>
-                            <span>📅 07/01/2024</span>
-                        </div>
-                        <div class="task-actions">
-                            <i>✏️</i>
-                            <i>👁️</i>
-                        </div>
-                    </div>
-                    <div class="task">
-                        <div class="task-details">
-                            <span>2. Riset Literatur</span>
-                            <span>📅 07/01/2024</span>
-                        </div>
-                        <div class="task-actions">
-                            <i>✏️</i>
-                            <i>👁️</i>
-                        </div>
-                    </div>
+                <div class="header">
+                    <div class="title">Jadwal Hari Ini</div>
+                    <div class="date">12 Des, 2024</div>
                 </div>
         
-                <div class="section">
-                    <h3>Completed ✅</h3>
-                    <div class="task">
-                        <div class="task-details">
-                            <span>1. Menulis Bab 2</span>
-                            <span>📅 06/01/2024</span>
+        
+                <div class="schedule">
+                    <div class="schedule-item">
+                        <div class="schedule-details">
+                            <span><b>Bimbingan TA</b></span>
+                            <span>Dosen Pembimbing: Dr. Sirojul Munir M.T.I</span>
+                            <span>Kegiatan: Membahas Bab 3</span>
+                            <span class="schedule-location">📍 B2 - 206</span>
                         </div>
-                        <div class="task-actions">
+                        <div class="schedule-actions">
+                            <span class="schedule-status">4 hari 12 jam lagi</span>
                             <i>✏️</i>
-                            <i>👁️</i>
+                            <i>✅</i>
+                        </div>
+                    </div>
+        
+                    <div class="schedule-item">
+                        <div class="schedule-details">
+                            <span><b>Bimbingan TA</b></span>
+                            <span>Dosen Pembimbing: Dr. Sirojul Munir M.T.I</span>
+                            <span>Kegiatan: Membahas Metodologi</span>
+                            <span class="schedule-location">📍 B3 - 102</span>
+                        </div>
+                        <div class="schedule-actions">
+                            <span class="schedule-status"></span>
+                            <i>✏️</i>
+                            <i>✅</i>
                         </div>
                     </div>
                 </div>
         
-                <div class="section">
-                    <h3>Pending</h3>
-                    <div class="task">
-                        <div class="task-details">
-                            <span>1. Menulis Bab 3</span>
-                            <span>📅 08/01/2024</span>
-                        </div>
-                        <div class="task-actions">
-                            <i>✏️</i>
-                            <i>👁️</i>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="add-task">
-                    <button onclick="window.location.href='tambah_tugas.html?';">Tambah Tugas</button>
-                </div>
+                <div class="add-button">+</div>
             </div>
-        </body>
-        
     </section>
     
 
     <!-- End Features Area -->
 
-    <script>
-        // Ambil daftar tugas dari localStorage
-        const tugas = JSON.parse(localStorage.getItem("tugas")) || [];
-        const daftarTugas = document.getElementById("daftarTugas");
-
-        // Urutkan tugas berdasarkan tanggal (paling dekat ke paling jauh)
-        tugas.sort((a, b) => new Date(a.tanggal) - new Date(b.tanggal));
-
-        // Tambahkan status untuk tugas (jika belum ada)
-        tugas.forEach((item) => {
-            if (!item.status) {
-                item.status = "Pending"; // Default status
-            }
-        });
-
-        // Tampilkan tugas berdasarkan prioritas
-        tugas.forEach((item) => {
-            const now = new Date();
-            const deadline = new Date(item.tanggal);
-            const timeDiff = Math.ceil((deadline - now) / (1000 * 60 * 60 * 24)); // Hitung selisih hari
-
-            const card = document.createElement("div");
-            card.className = "col-lg-4 col-md-6 col-12";
-            card.innerHTML = `
-                <div class="card shadow-sm ${
-                    timeDiff <= 3 ? "border-danger" : "border-primary"
-                }">
-                    <div class="card-body">
-                        <h5 class="card-title">${item.judul}</h5>
-                        <p class="card-text"><strong>Deadline:</strong> ${item.tanggal} (${timeDiff > 0 ? timeDiff + " hari lagi" : "Sudah lewat"})</p>
-                        <p class="card-text">${item.deskripsi}</p>
-                        <span class="badge ${
-                            item.status === "Completed"
-                                ? "bg-success"
-                                : "bg-danger"
-                        }">${item.status}</span>
-                        <button class="btn btn-sm btn-outline-primary mt-2 update-status" data-id="${tugas.indexOf(
-                            item
-                        )}">Ubah Status</button>
-                    </div>
-                </div>
-            `;
-            daftarTugas.appendChild(card);
-        });
-
-        // Event Listener untuk tombol ubah status
-        document.querySelectorAll(".update-status").forEach((button) => {
-            button.addEventListener("click", (event) => {
-                const id = event.target.getAttribute("data-id");
-                tugas[id].status =
-                    tugas[id].status === "Pending" ? "Completed" : "Pending";
-
-                // Simpan perubahan ke localStorage
-                localStorage.setItem("tugas", JSON.stringify(tugas));
-
-                // Reload halaman untuk memperbarui tampilan
-                location.reload();
-            });
-        });
-    </script>
+    
 
  
 
