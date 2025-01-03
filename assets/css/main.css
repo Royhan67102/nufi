@@ -2025,10 +2025,8 @@ ol {
   display: inline-block;
   background: transparent;
   border: none;
-  color: #fff;
-  border-radius: 0;
-  padding: 0 20px;
   color: #fff !important;
+  padding: 0 20px;
   font-size: 14px;
   background-color: #fff3;
   border-radius: 5px;
