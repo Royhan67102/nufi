@@ -32,10 +32,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Verifikasi password
         $hashed_password = md5($password);
-        
-        // Debugging: Tampilkan password yang di-hash dan password dari database
-        echo "Password yang di-hash: " . $hashed_password . "<br>";
-        echo "Password dari database: " . $user['password'] . "<br>";
 
         if ($hashed_password === $user['password']) {
             // Password benar, set session
@@ -44,11 +40,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Redirect berdasarkan role
             if ($user['role'] === 'admin') {
-                header("Location: /naga/naggggga/admin/dashboard.php");
+                header("Location: ../admin/dashboard.php");
             } elseif ($user['role'] === 'dosen') {
-                header("Location: /naga/naggggga/dosen/dashboard.php");
+                header("Location: ../dosen/dashboard.php");
+            } elseif ($user['role'] === 'mahasiswa') {
+                header("Location: ../mahasiswa/index.php");
             } else {
-                header("Location: /naga/naggggga/mahasiswa/dashboard.php");
+                header("Location: ../index.php");
             }
             exit;
         } else {
