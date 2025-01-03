@@ -1,0 +1,147 @@
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    margin-top: -500px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 500px; /* Lebar maksimal lebih besar untuk desktop */
+    background: #3B82F6;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 30px;
+    margin-top: -180px;
+}
+
+.profile-avatar {
+    margin-top: -60px;
+}
+
+.avatar-circle {
+    width: 120px; /* Ukuran avatar lebih besar untuk desktop */
+    height: 120px;
+    background: #805AD5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.avatar-icon {
+    font-size: 50px; /* Ukuran ikon lebih besar */
+    color: #fff;
+}
+
+.profile-info h2 {
+    margin: 20px 0 10px;
+    font-size: 28px; /* Ukuran teks lebih besar */
+}
+
+.info-box {
+    background: #A5B4FC;
+    padding: 15px; /* Padding lebih besar */
+    border-radius: 10px;
+    color: #000;
+    text-align: left;
+    font-size: 18px; /* Font lebih besar */
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #fff;
+    margin: 15px 0;
+}
+
+.edit-profile {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #fff;
+    color: #3B82F6;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.edit-profile:hover {
+    background: #E0F2FE;
+}
+
+.bottom-menu {
+    margin-top: auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px; /* Lebar lebih besar untuk desktop */
+}
+
+.logout-button {
+    width: 100%;
+    padding: 12px; /* Padding lebih besar */
+    background: #EF4444;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px; /* Font lebih besar */
+}
+
+.logout-button:hover {
+    background: #F87171;
+}
+
+.focus-mode {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #E0E7FF;
+    padding: 15px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 16px; /* Font lebih besar */
+}
+
+#focus-switch {
+    cursor: pointer;
+}
+
+/* Media Query untuk desktop */
+@media (min-width: 768px) {
+    .profile-container {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .profile-card {
+        padding: 40px; /* Padding lebih besar untuk desktop */
+    }
+
+    .info-box {
+        font-size: 20px; /* Font lebih besar di desktop */
+    }
+
+    .logout-button {
+        font-size: 20px; /* Font lebih besar di desktop */
+    }
+}
