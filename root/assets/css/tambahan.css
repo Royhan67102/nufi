@@ -1,0 +1,145 @@
+.button_container {
+    display: flex; /* Menggunakan flexbox untuk pengaturan layout */
+    justify-content: center; /* Mengatur tombol berada di tengah secara horizontal */
+    align-items: center; /* Mengatur tombol berada di tengah secara vertikal */
+    gap: 20px;
+}
+button {
+    background-color: #61a0db; /* Warna latar belakang transparan */
+    color: #ffffff; /* Warna teks hitam */
+    border: 2px solid #000; /* Warna border hitam */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px; /* Ukuran font */
+    cursor: pointer; /* Mengubah kursor menjadi pointer ketika mouse diarahkan ke tombol */
+    transition: all 0.3s ease; /* Animasi transisi untuk efek hover */
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #61a0db; /* Warna latar belakang menjadi biru saat di-hover */
+    color: white; /* Warna teks menjadi putih saat di-hover */
+    border-color: #61a0db; /* Warna border mengikuti warna latar belakang biru */
+}
+
+.calendar-container {
+    flex: 1;
+    min-width: 300px; /* Lebar minimum untuk memastikan elemen tetap terlihat */
+    max-width: 500px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #61a0db;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #61a0db;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    width: 30px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td {
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: #f0f0f0;
+}
+
+td.empty {
+    background-color: #f9f9f9;
+}
+
+
+
+/* kuadran */
+.kuadran {
+    flex: 1;
+    min-width: 300px; /* Lebar minimum untuk elemen ini */
+    max-width: 500px;
+    padding: 10px;
+    padding-bottom: -50px;
+    border: 2px solid #ccc;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    margin-top: -350px;
+    margin-left: 650px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    /* width: 200px; */
+    /* height: 100px; */
+}
+.quadrant1 {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    background-color:rgb(228, 114, 114);; /* Menambahkan latar belakang gelap agar tulisan putih terlihat jelas */
+    color: white; /* Mengubah warna tulisan menjadi putih */
+}
+.quadrant2 {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    background-color:rgb(75, 228, 113);; /* Menambahkan latar belakang gelap agar tulisan putih terlihat jelas */
+    color: white; /* Mengubah warna tulisan menjadi putih */
+}
+.quadrant3 {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    background-color:#61a0db; /* Menambahkan latar belakang gelap agar tulisan putih terlihat jelas */
+    color: white; /* Mengubah warna tulisan menjadi putih */
+}
+.quadrant4 {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    background-color:#78828b; /* Menambahkan latar belakang gelap agar tulisan putih terlihat jelas */
+    color: white; /* Mengubah warna tulisan menjadi putih */
+}
+.quadrant h3 {
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px; /* Memperkecil ukuran font */
+}
+.tasks {
+    margin-top: 30px;
+    font-size: 14px; /* Memperkecil ukuran font */
+}
