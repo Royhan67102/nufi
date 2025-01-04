@@ -1,3 +1,12 @@
+<?php
+// admin/dashboard.php
+session_start();
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'mahasiswa') {
+    header('Location: ../index.php');  // Gunakan path absolut
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 
@@ -35,13 +44,22 @@
     </div>
     <!-- /End Preloader -->
 
+    <!-- Logout Button -->
+    <div style="position: absolute; top: 10px; right: 10px; z-index: 1000;">
+        <a href="../root/logout.php" class="btn btn-danger">
+            <i class="lni lni-exit"></i> Logout
+        </a>
+    </div>
+
+    <!-- Your existing content here -->
+
     <!-- Start Header Area -->
     <header class="header navbar-area" >
         <div class="container">
      
                         <nav class="navbar navbar-expand-lg" >
                             <div class="button add-list-button" style="margin-top: 20px; margin-left: -60px;">
-                                <a href="tampilan.html" class="btn">Kembali</a>
+                                <a href="tampilan.php" class="btn">Kembali</a>
                             </div>
 
                            

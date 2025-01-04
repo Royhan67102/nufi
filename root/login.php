@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             } elseif ($user['role'] === 'dosen') {
                 header("Location: ../dosen/dashboard.php");
             } elseif ($user['role'] === 'mahasiswa') {
-                header("Location: ../mahasiswa/index.php");
+                header("Location: ../root/tampilan.php");
             } else {
                 header("Location: ../index.php");
             }

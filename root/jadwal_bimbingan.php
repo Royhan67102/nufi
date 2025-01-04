@@ -124,7 +124,7 @@
                     <div class="nav-inner">
                         <!-- Start Navbar -->
                         <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="tampilan.html">
+                            <a class="navbar-brand" href="tampilan.php">
                                 <img src="assets/images/logo/logo.png" alt="Logo">
                             </a>
                             <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
@@ -137,22 +137,22 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav ms-auto">
                                     <li class="nav-item">
-                                        <a href="tampilan.html">Home</a>
+                                        <a href="tampilan.php">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="tugas.html">Tugas</a>
+                                        <a href="tugas.php">Tugas</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="#" 
                                             aria-label="Toggle navigation">Jadwal Bimbingan</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="profil.html">Profil</a>
+                                        <a href="profil.php">Profil</a>
                                     </li>
                                 </ul>
                             </div> <!-- navbar collapse -->
                             <div class="button add-list-button">
-                                <a href="form_pengajuanTA.html" class="btn">Buat Jadwal TA Yuk</a>
+                                <a href="form_pengajuanTA.php" class="btn">Buat Jadwal TA Yuk</a>
                             </div>
                         </nav>
                         <!-- End Navbar -->

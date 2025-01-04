@@ -42,7 +42,7 @@
                     <div class="nav-inner">
                         <!-- Start Navbar -->
                         <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="tampilan.html">
+                            <a class="navbar-brand" href="tampilan.php">
                                 <img src="assets/images/logo/logo.png" alt="Logo">
                             </a>
                             <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
@@ -63,16 +63,16 @@
                                             aria-label="Toggle navigation">Tugas</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="jadwal_bimbingan.html" 
+                                        <a href="jadwal_bimbingan.php" 
                                             aria-label="Toggle navigation">Jadwal Bimbingan</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="profil.html">Profil</a>
+                                        <a href="profil.php">Profil</a>
                                     </li>
                                 </ul>
                             </div> <!-- navbar collapse -->
                             <div class="button add-list-button">
-                                <a href="form_pengajuanTA.html" class="btn">Buat Jadwal TA Yuk</a>
+                                <a href="form_pengajuanTA.php" class="btn">Buat Jadwal TA Yuk</a>
                             </div>
                         </nav>
                         <!-- End Navbar -->
@@ -113,7 +113,7 @@
                         <p style="color: rgb(228, 114, 114);">DATE: 20-12-2024</p>
                         <br>
                         <P style="color: rgb(228, 114, 114);">3 hari 2 jam lagi</P>
-                        <button onclick="window.location.href='detail.html?task=bigdata';">Detail</button>
+                        <button onclick="window.location.href='detail.php?task=bigdata';">Detail</button>
                     </div>
                     <!-- End Single Feature -->
                 </div>
@@ -126,7 +126,7 @@
                         <p style="color: rgb(228, 114, 114);">Waktu : 13.00 - 15.30</p>
                         <br>
                         <P style="color: rgb(228, 114, 114);">3 hari 2 jam lagi</P>
-                        <button onclick="window.location.href='detail.html?task=bimbinganta';">Detail</button>
+                        <button onclick="window.location.href='detail.php?task=bimbinganta';">Detail</button>
                     </div>
                     <!-- End Single Feature -->
                 </div>
@@ -136,7 +136,7 @@
                         <h3>TUGAS TBO</h3>
                         <p style="color: rgb(0, 0, 0);">DATE: 25-12-2024</p><br>
                         <P style="color: rgb(228, 114, 114);">7 hari 2 jam lagi</P>
-                        <button onclick="window.location.href='detail.html?task=tbo';">Detail</button>
+                        <button onclick="window.location.href='detail.php?task=tbo';">Detail</button>
                     </div>
                     <!-- End Single Feature -->
                 </div>
@@ -146,7 +146,7 @@
                         <h3>MENTORING</h3>
                         <p style="color: rgb(0, 0, 0);">DATE: 01-01-2025</p><br>
                         <P style="color: rgb(228, 114, 114);">12 hari 2 jam lagi</P>
-                        <button onclick="window.location.href='detail.html?task=mentoring';">Detail</button>
+                        <button onclick="window.location.href='detail.php?task=mentoring';">Detail</button>
                     </div>
                     <!-- End Single Feature -->
                 </div>
@@ -156,7 +156,7 @@
                         <h3>DISKUSI PROPOSAL</h3>
                         <p style="color: rgb(0, 0, 0);">DATE: 25-02-2025</p><br>
                         <P style="color: rgb(228, 114, 114);">14 hari 1 jam lagi</P>
-                        <button onclick="window.location.href='detail.html?task=diskusiprop';">Detail</button>
+                        <button onclick="window.location.href='detail.php?task=diskusiprop';">Detail</button>
                     </div>
                     <!-- End Single Feature -->
                 </div>
@@ -166,7 +166,7 @@
                         <h3>TUGAS BIG DATA</h3>
                         <p style="color: rgb(2, 2, 2);">DATE: 20-12-2024</p><br>
                         <P style="color: rgb(228, 114, 114);">3 hari 2 jam lagi</P>
-                        <button onclick="window.location.href='detail.html?task=bigdata';">Detail</button>
+                        <button onclick="window.location.href='detail.php?task=bigdata';">Detail</button>
                     </div>
                     <!-- End Single Feature -->
                 </div>
@@ -174,8 +174,8 @@
         </div>
         <br><br>
         <div class="button_container">
-            <button class="tombol_button" onclick="window.location.href='tambah_tugas.html';">Tambah Tugas</button>
-            <button class="tombol_button" onclick="window.location.href='tugas.html';">Lihat Semua Tugas</button>
+            <button class="tombol_button" onclick="window.location.href='tambah_tugas.php';">Tambah Tugas</button>
+            <button class="tombol_button" onclick="window.location.href='tugas.php';">Lihat Semua Tugas</button>
             
         </div>
     </section>
@@ -263,4 +263,4 @@
     </script>
 </body>
 
-</html>
+    </html>

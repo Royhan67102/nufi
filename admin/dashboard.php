@@ -10,7 +10,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
 <html>
 <head>
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="../assets/css//admindashboard.css">
+    <link rel="stylesheet" href="../root/assets/css/admindashboard.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>

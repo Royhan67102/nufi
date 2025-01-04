@@ -40,7 +40,7 @@
  
                     <nav class="navbar navbar-expand-lg" >
                         <div class="button add-list-button" style="margin-top: 20px; margin-left: -60px;">
-                            <a href="tampilan.html" class="btn">Kembali</a>
+                            <a href="tampilan.php" class="btn">Kembali</a>
                         </div>
                     </nav>
                  
@@ -69,7 +69,7 @@
             </div>
             <div class="d-flex justify-content-between">
                 <button type="submit" class="btn btn-primary">Tambah Tugas</button>
-                <a href="tugas.html" class="btn btn-secondary">Lihat Semua Tugas</a>
+                <a href="tugas.php" class="btn btn-secondary">Lihat Semua Tugas</a>
             </div>
         </form>
     </main>

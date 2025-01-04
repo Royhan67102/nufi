@@ -12,7 +12,7 @@
     <!-- Header -->
     <header class="header">
       <div class="container text-center">
-        <a href="index.html">
+        <a href="index.php">
           <img src="assets/images/logo/logo.png" alt="Logo" />
         </a>
       </div>
@@ -27,7 +27,7 @@
 
       <!-- Button Kembali -->
       <div class="text-center mt-4">
-        <a href="tampilan.html" class="btn btn-secondary">Kembali</a>
+        <a href="tampilan.php" class="btn btn-secondary">Kembali</a>
       </div>
     </main>
 

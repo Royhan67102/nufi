@@ -13,7 +13,7 @@
     <!-- Header -->
     <header class="header">
         <div class="container text-center">
-            <a href="tampilan.html">
+            <a href="tampilan.php">
                 <img src="assets/images/logo/logo.png" alt="Logo">
             </a>
         </div>
@@ -37,7 +37,7 @@
                         <p id="task-desc"></p>
                         <!-- Status -->
                         <p><strong>Status:</strong> <span id="task-status"></span></p>
-                        <a href="tampilan.html" class="btn btn-secondary mt-3">Kembali</a>
+                        <a href="tampilan.php" class="btn btn-secondary mt-3">Kembali</a>
                     </div>
                 </div>
             </div>
@@ -106,6 +106,7 @@
         document.getElementById("task-status").textContent =
           tasks[taskKey].status;
       } else {
+
         document.querySelector(".card-body").innerHTML =
           "<p>Tugas tidak ditemukan!</p>";
       }

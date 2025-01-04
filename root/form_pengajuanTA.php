@@ -41,7 +41,7 @@
      
                         <nav class="navbar navbar-expand-lg" >
                             <div class="button add-list-button" style="margin-top: 20px; margin-left: -60px;">
-                                <a href="tampilan.html" class="btn">Kembali</a>
+                                <a href="tampilan.php" class="btn">Kembali</a>
                             </div>
                         </nav>
                      
