@@ -1,330 +1,99 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
-
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daftar Tugas</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
-
-    <!-- ========================= CSS here ========================= -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
-    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/tambahan.css" />
+    <link rel="stylesheet" href="assets/css/detail.css" />
+  </head>
 
-    <style>
-        
-
-        .header {
-            font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .section {
-            margin-bottom: 20px;
-        }
-
-        .section h3 {
-            background: #0078FF;
-            color: white;
-            padding: 10px;
-            border-radius: 10px;
-            font-size: 18px;
-        }
-
-        .task {
-            background: #E9F3FF;
-            padding: 10px;
-            border-radius: 10px;
-            margin: 10px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .task-details {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .task-details span {
-            font-size: 16px;
-            color: #333;
-        }
-
-        .task-actions {
-            display: flex;
-            gap: 10px;
-        }
-
-        .task-actions i {
-            font-size: 18px;
-            color: #0078FF;
-            cursor: pointer;
-        }
-
-        .add-task {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .add-task button {
-            background: #0078FF;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .add-task button:hover {
-            background: #005bb5;
-        }
-
-    </style>
-
-</head>
-
-<body>
-
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="preloader-inner">
-            <div class="preloader-icon">
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-    <!-- /End Preloader -->
-
-    <!-- Start Header Area -->
-    <header class="header navbar-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <div class="nav-inner">
-                        <!-- Start Navbar -->
-                        <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="tampilan.html">
-                                <img src="assets/images/logo/logo.png" alt="Logo">
-                            </a>
-                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                                <ul id="nav" class="navbar-nav ms-auto">
-                                    <li class="nav-item">
-                                        <a href="tampilan.html">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="tugas.html">Tugas</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="jadwal_bimbingan.html" 
-                                            aria-label="Toggle navigation">Jadwal Bimbingan</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="profil.html">Profil</a>
-                                    </li>
-                                </ul>
-                            </div> <!-- navbar collapse -->
-                            <div class="button add-list-button">
-                                <a href="form_pengajuanTA.html" class="btn">Buat Jadwal TA Yuk</a>
-                            </div>
-                        </nav>
-                        <!-- End Navbar -->
-                    </div>
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container text-center">
+        <a href="index.html">
+          <img src="assets/images/logo/logo.png" alt="Logo" />
+        </a>
+      </div>
     </header>
-    <!-- End Header Area -->
 
-    <!-- Start Hero Area -->
-    <section id="home" class="hero-area">
-        <div class="container">
-                        <h1 data-wow-delay=".4s" style="text-align: left;  color: white;">Hai, Nufi</h1>
-                        <p data-wow-delay=".6s" style="text-align: left;  color: white;">Semangat Nufi! Ketika tugas menumpuk dan waktu terasaa singkat ingatlah Fokus pada satu tugas dalam satu waktu. 
-                            Jangan khawatirkan sempurna, tapi kerjakan sebisamu. Tiga hari adalah waktu yang cukup jika kamu melangkah dengan tekad.
-                            Ingat, perjuangan hari ini adalah pintu menuju keberhasilan di masa depan. 🌟</p>
-        </div>
-    </section>
-    <!-- End Hero Area -->
+    <!-- Main Content -->
+    <main class="container mt-5">
+      <h1 class="text-center mb-4">Daftar Tugas</h1>
+      <div id="daftarTugas" class="row g-3">
+        <!-- Tugas akan ditampilkan di sini -->
+      </div>
 
-    <!-- Start Features Area -->
-    <section id="features" class="features section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title">
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Ada Tugas Apa Aja Nih?
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-        
-                <div class="section">
-                    <h3>In Progress</h3>
-                    <div class="task">
-                        <div class="task-details">
-                            <span>1. Menulis Bab 1</span>
-                            <span>📅 07/01/2024</span>
-                        </div>
-                        <div class="task-actions">
-                            <i>✏️</i>
-                            <i>👁️</i>
-                        </div>
-                    </div>
-                    <div class="task">
-                        <div class="task-details">
-                            <span>2. Riset Literatur</span>
-                            <span>📅 07/01/2024</span>
-                        </div>
-                        <div class="task-actions">
-                            <i>✏️</i>
-                            <i>👁️</i>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="section">
-                    <h3>Completed ✅</h3>
-                    <div class="task">
-                        <div class="task-details">
-                            <span>1. Menulis Bab 2</span>
-                            <span>📅 06/01/2024</span>
-                        </div>
-                        <div class="task-actions">
-                            <i>✏️</i>
-                            <i>👁️</i>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="section">
-                    <h3>Pending</h3>
-                    <div class="task">
-                        <div class="task-details">
-                            <span>1. Menulis Bab 3</span>
-                            <span>📅 08/01/2024</span>
-                        </div>
-                        <div class="task-actions">
-                            <i>✏️</i>
-                            <i>👁️</i>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="add-task">
-                    <button onclick="window.location.href='tambah_tugas.html?';">Tambah Tugas</button>
-                </div>
-            </div>
-        </body>
-        
-    </section>
-    
-
-    <!-- End Features Area -->
+      <!-- Button Kembali -->
+      <div class="text-center mt-4">
+        <a href="tampilan.html" class="btn btn-secondary">Kembali</a>
+      </div>
+    </main>
 
     <script>
-        // Ambil daftar tugas dari localStorage
-        const tugas = JSON.parse(localStorage.getItem("tugas")) || [];
-        const daftarTugas = document.getElementById("daftarTugas");
+      // Ambil daftar tugas dari localStorage
+      const tugas = JSON.parse(localStorage.getItem("tugas")) || [];
+      const daftarTugas = document.getElementById("daftarTugas");
 
-        // Urutkan tugas berdasarkan tanggal (paling dekat ke paling jauh)
-        tugas.sort((a, b) => new Date(a.tanggal) - new Date(b.tanggal));
+      // Urutkan tugas berdasarkan tanggal (paling dekat ke paling jauh)
+      tugas.sort((a, b) => new Date(a.tanggal) - new Date(b.tanggal));
 
-        // Tambahkan status untuk tugas (jika belum ada)
-        tugas.forEach((item) => {
-            if (!item.status) {
-                item.status = "Pending"; // Default status
-            }
-        });
+      // Tambahkan status untuk tugas (jika belum ada)
+      tugas.forEach((item) => {
+        if (!item.status) {
+          item.status = "Pending"; // Default status
+        }
+      });
 
-        // Tampilkan tugas berdasarkan prioritas
-        tugas.forEach((item) => {
-            const now = new Date();
-            const deadline = new Date(item.tanggal);
-            const timeDiff = Math.ceil((deadline - now) / (1000 * 60 * 60 * 24)); // Hitung selisih hari
+      // Tampilkan tugas berdasarkan prioritas
+      tugas.forEach((item) => {
+        const now = new Date();
+        const deadline = new Date(item.tanggal);
+        const timeDiff = Math.ceil((deadline - now) / (1000 * 60 * 60 * 24)); // Hitung selisih hari
 
-            const card = document.createElement("div");
-            card.className = "col-lg-4 col-md-6 col-12";
-            card.innerHTML = `
+        const card = document.createElement("div");
+        card.className = "col-lg-4 col-md-6 col-12";
+        card.innerHTML = `
                 <div class="card shadow-sm ${
-                    timeDiff <= 3 ? "border-danger" : "border-primary"
+                  timeDiff <= 3 ? "border-danger" : "border-primary"
                 }">
                     <div class="card-body">
                         <h5 class="card-title">${item.judul}</h5>
-                        <p class="card-text"><strong>Deadline:</strong> ${item.tanggal} (${timeDiff > 0 ? timeDiff + " hari lagi" : "Sudah lewat"})</p>
+                        <p class="card-text"><strong>Deadline:</strong> ${
+                          item.tanggal
+                        } (${
+          timeDiff > 0 ? timeDiff + " hari lagi" : "Sudah lewat"
+        })</p>
                         <p class="card-text">${item.deskripsi}</p>
                         <span class="badge ${
-                            item.status === "Completed"
-                                ? "bg-success"
-                                : "bg-danger"
+                          item.status === "Completed"
+                            ? "bg-success"
+                            : "bg-danger"
                         }">${item.status}</span>
                         <button class="btn btn-sm btn-outline-primary mt-2 update-status" data-id="${tugas.indexOf(
-                            item
+                          item
                         )}">Ubah Status</button>
                     </div>
                 </div>
             `;
-            daftarTugas.appendChild(card);
+        daftarTugas.appendChild(card);
+      });
+
+      // Event Listener untuk tombol ubah status
+      document.querySelectorAll(".update-status").forEach((button) => {
+        button.addEventListener("click", (event) => {
+          const id = event.target.getAttribute("data-id");
+          tugas[id].status =
+            tugas[id].status === "Pending" ? "Completed" : "Pending";
+
+          // Simpan perubahan ke localStorage
+          localStorage.setItem("tugas", JSON.stringify(tugas));
+
+          // Reload halaman untuk memperbarui tampilan
+          location.reload();
         });
-
-        // Event Listener untuk tombol ubah status
-        document.querySelectorAll(".update-status").forEach((button) => {
-            button.addEventListener("click", (event) => {
-                const id = event.target.getAttribute("data-id");
-                tugas[id].status =
-                    tugas[id].status === "Pending" ? "Completed" : "Pending";
-
-                // Simpan perubahan ke localStorage
-                localStorage.setItem("tugas", JSON.stringify(tugas));
-
-                // Reload halaman untuk memperbarui tampilan
-                location.reload();
-            });
-        });
+      });
     </script>
-
- 
-
-    <!-- ========================= scroll-top ========================= -->
-
-    <!-- ========================= JS here ========================= -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/tiny-slider.js"></script>
-    <script src="assets/js/glightbox.min.js"></script>
-    <script src="assets/js/count-up.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script type="text/javascript">
-
-        //====== counter up 
-        var cu = new counterUp({
-            start: 0,
-            duration: 2000,
-            intvalues: true,
-            interval: 100,
-            append: " ",
-        });
-        cu.start();
-    </script>
-</body>
-
+  </body>
 </html>
